@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Layout Styles with Aside</title>
-
-<style>
-
-/* Write your CSS here */
-
-</style>
-
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Layout Styles with Aside</title>
+ <style>
+ body {
+ width: 900px;
+ margin: auto;
+ font-family: Arial, sans-serif;
+ border: 2px solid #333;
+ }
+ header {
+ background: #4CAF50;
+ color: white;
+ text-align: center;
+ padding: 15px;
+ }
+ nav {
+ background: #333;
+ padding: 10px;
+ }
+ nav a {
+ color: white;
+ text-decoration: none;
+ margin-right: 20px;
+ }
+ section {
+ float: left;
+ width: 65%;
+ padding: 20px;
+ box-sizing: border-box;
+ }
+ aside {
+ float: right;
+ width: 30%;
+ background: #f2f2f2;
+ padding: 20px;
+ box-sizing: border-box;
+footer {
+ clear: both;
+ background: #4CAF50;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ }
+ h2 {
+ color: #4CAF50;
+ }
+ </style>
 </head>
-
 <body>
-
-<!-- Write your HTML code here -->
-
+<header>
+ <h1>Murach HTML5 & CSS3 Layout Example</h1>
+</header>
+<nav>
+ <a href="#">Home</a>
+ <a href="#">Courses</a>
+ <a href="#">About</a>
+ <a href="#">Contact</a>
+</nav>
+<section>
+ <h2>Main Content</h2>
+ <p>
+ This section contains the main content of the webpage.
+ The layout uses HTML5 semantic elements such as
+ <strong>header</strong>, <strong>nav</strong>,
+ <strong>section</strong>, <strong>aside</strong>, and
+ <strong>footer</strong>.
+ </p>
+ <p>
+ CSS float properties are used to position the section and aside
+ side by side, similar to the examples in the Murach HTML5 and CSS3 book.
+ </p>
+</section>
+<aside>
+ <h2>Aside</h2>
+ <p>
+ The aside contains related information, announcements,
+ or advertisements associated with the main content.
+ </p>
+</aside>
+<footer>
+ <p>&copy; 2026 Murach HTML5 & CSS3 Layout Example</p>
+</footer>
 </body>
 </html>
